@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class:</title>
+
+    <link rel="stylesheet" href="../assets/libs/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <script src="../assets/libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../assets/libs/jquery/jquery-3.6.3.js"></script>
+    <script type="module" src="../assets/js/site.js"></script>
+</head>
+
+<body style="display: none;">
+    <div include-html="../fragments/navbar.html" id="navbar">
+    </div>
+    <div class="container my-4">
+        <main>
+            <div class="row my-3">
+                <div class="col-12">
+                    <div class="card text-white">
+                        <img src="https://placehold.co/600x400/dddddd/dddddd?text=image" class="card-img img-cover" id="classCoverImage"
+                            alt="class image cover">
+                        <div class="card-img-overlay d-flex align-items-end bg-black bg-opacity-50">
+                            <h1 class="card-title" id="classNameCover" aria-hidden="true"></span></h1>
+                            <div class="dropdown ms-auto">
+                                <div id="classMenu">
+                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Option
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div id="actionPanel" class="col-lg-3 container mb-3">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 placeholder-glow">
+                                        <span class="placeholder col-3"></span>
+                                    </h6>
+                                    <h5 class="card-title mb-2 placeholder-glow" id="classCode"><span class="placeholder col-6"></span></h5>
+                                    <p class="placeholder-glow mb-2"><span class="placeholder col-3 bg-primary"></span></p>
+                                    <p class="card-text mt-3 text-muted placeholder-glow">
+                                        <span class="placeholder col-3"></span>
+                                        <span class="placeholder col-7"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 container">
+                    <div class="row mb-3 justify-content-end">
+                        <div class="col-auto">
+                            <a id="createPostButton" class="btn btn-primary" href="../post/create.html">
+                                <i class="fa-solid fa-plus me-2 fa-lg"></i>Create Post
+                            </a>
+                        </div>
+                    </div>
+                    <div id="postContainter">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="https://placehold.co/600x400/dddddd/dddddd?text=image"
+                                             class="img-avatar-post rounded-circle nav-item border me-1"
+                                             aria-hidden="true">
+                                        <span class="h6 placeholder-glow">
+                                            <span class="placeholder col-4"></span>
+                                        </span>
+                                        <span>|</span>
+                                        <span class="placeholder-glow">
+                                           <span class="placeholder col-2"></span>
+                                        </span>
+                                        <div class="dropdown d-inline ms-3">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text placeholder-glow">
+                                            <span class="placeholder col-3"></span>
+                                            <span class="placeholder col-7"></span>
+                                            <span class="placeholder col-2"></span>
+                                            <span class="placeholder col-6"></span>
+                                            <span class="placeholder col-5"></span>
+                                        </p>
+                  
+                                        <p class="placeholder-glow">
+                                            <span class="placeholder col-3 bg-primary"></span>
+                                            <span class="placeholder col-3 bg-primary"></span>
+                                            <span class="placeholder col-3 bg-primary"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="https://placehold.co/600x400/dddddd/dddddd?text=image"
+                                             class="img-avatar-post rounded-circle nav-item border me-1"
+                                             aria-hidden="true">
+                                        <span class="h6 placeholder-glow">
+                                            <span class="placeholder col-4"></span>
+                                        </span>
+                                        <span>|</span>
+                                        <span class="placeholder-glow">
+                                           <span class="placeholder col-2"></span>
+                                        </span>
+                                        <div class="dropdown d-inline ms-3">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text placeholder-glow">
+                                            <span class="placeholder col-3"></span>
+                                            <span class="placeholder col-7"></span>
+                                            <span class="placeholder col-2"></span>
+                                            <span class="placeholder col-6"></span>
+                                            <span class="placeholder col-5"></span>
+                                        </p>
+                  
+                                        <p class="placeholder-glow">
+                                            <span class="placeholder col-3 bg-primary"></span>
+                                            <span class="placeholder col-3 bg-primary"></span>
+                                            <span class="placeholder col-3 bg-primary"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-auto">
+                            <div id="pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
